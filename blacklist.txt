@@ -4,6 +4,7 @@ Test-Knoten
 # die folgenden Knoten bauen ständig den Tunnel auf
 # und ab und verursachen dabei eine hohe Last
 Gera-KUK-Backbone
+Gera-VHS-Backbone
 Server-003
 Unknown-Server
 68725170b298
