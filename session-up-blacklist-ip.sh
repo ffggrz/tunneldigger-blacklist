@@ -11,7 +11,7 @@ log_message() {
     echo "$1" 1>&2
 }
 
-if /bin/grep -q "^$UUID$" /etc/tunneldigger/ggrz/blacklist.txt; then
+if /bin/grep -q "^$UUID$" /etc/tunneldigger/ggrz/blacklist/blacklist.txt; then
         OLDIP=$(/sbin/iptables -L -n | /bin/grep -- "/* $UUID" | awk '{print $4}')
         if test -z "$OLDIP"; then
                 log_message "New client with UUID=$UUID is blacklisted, blocking ip address $IP"
