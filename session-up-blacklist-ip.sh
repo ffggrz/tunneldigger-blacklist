@@ -28,5 +28,5 @@ else
         log_message "New client with UUID=$UUID connected, adding to batman interface"
         /bin/ip link set dev $INTERFACE up mtu $MTU
         ##/sbin/brctl addif ggrzL2TP $INTERFACE
-        /usr/sbin/batctl -m ggrzBAT if add $INTERFACE
+        /usr/sbin/batctl meshif ggrzBAT if add $INTERFACE
 fi
